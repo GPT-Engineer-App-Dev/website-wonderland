@@ -22,6 +22,9 @@ const Index = () => {
           <Button as="a" href="mailto:example@example.com" leftIcon={<FaEnvelope />} colorScheme="red" variant="solid" m={2}>
             Email
           </Button>
+          <Button as="a" href="/last-trips" colorScheme="teal" variant="solid" m={2}>
+            Last Trips
+          </Button>
         </Box>
       </VStack>
       <Footer />
