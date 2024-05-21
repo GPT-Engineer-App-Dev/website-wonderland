@@ -25,14 +25,8 @@ const Index = () => {
           </Button>
         </Box>
         <Box>
-          <Button as={RouterLink} to="/about-me" colorScheme="teal" variant="outline" m={2}>
-            About Me
-          </Button>
-          <Button as={RouterLink} to="/projects" colorScheme="teal" variant="outline" m={2}>
-            Projects
-          </Button>
-          <Button as={RouterLink} to="/quotes" colorScheme="teal" variant="outline" m={2}>
-            Quotes
+          <Button as={RouterLink} to="/last-trips" colorScheme="blue" variant="solid" m={2}>
+            Last Trips
           </Button>
         </Box>
       </VStack>
