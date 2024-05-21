@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Box, Button, Image } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Button, Image, HStack, Link } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
@@ -24,8 +24,26 @@ const Index = () => {
           </Button>
         </Box>
       </VStack>
+      <Footer />
     </Container>
   );
 };
+
+const Footer = () => (
+  <Box as="footer" py={4} textAlign="center" width="100%" mt={8} bg="gray.100">
+    <Text fontSize="sm">© {new Date().getFullYear()} My Personal Website. All rights reserved.</Text>
+    <HStack spacing={4} justify="center" mt={2}>
+      <Link href="https://github.com" isExternal>
+        <FaGithub />
+      </Link>
+      <Link href="https://linkedin.com" isExternal>
+        <FaLinkedin />
+      </Link>
+      <Link href="mailto:example@example.com">
+        <FaEnvelope />
+      </Link>
+    </HStack>
+  </Box>
+);
 
 export default Index;
