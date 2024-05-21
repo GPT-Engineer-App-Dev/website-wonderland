@@ -1,5 +1,6 @@
 import { Container, Text, VStack, Heading, Box, Button, Image, HStack, Link } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -21,6 +22,17 @@ const Index = () => {
           </Button>
           <Button as="a" href="mailto:example@example.com" leftIcon={<FaEnvelope />} colorScheme="red" variant="solid" m={2}>
             Email
+          </Button>
+        </Box>
+        <Box>
+          <Button as={RouterLink} to="/about-me" colorScheme="teal" variant="outline" m={2}>
+            About Me
+          </Button>
+          <Button as={RouterLink} to="/projects" colorScheme="teal" variant="outline" m={2}>
+            Projects
+          </Button>
+          <Button as={RouterLink} to="/quotes" colorScheme="teal" variant="outline" m={2}>
+            Quotes
           </Button>
         </Box>
       </VStack>
